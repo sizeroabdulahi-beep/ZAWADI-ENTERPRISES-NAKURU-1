@@ -1,0 +1,14 @@
+
+id,name,category,price,image,stock
+1,Android Smartphone,Phones,9500,https://placehold.co/500x400?text=Smartphone,In stock
+2,Classic Wristwatch,Wristwatches,1500,https://placehold.co/500x400?text=Wristwatch,In stock
+3,Wireless Earpods,Earpods,1200,https://placehold.co/500x400?text=Earpods,In stock
+4,USB-C Charging Cable,Cables,350,https://placehold.co/500x400?text=USB-C+Cable,In stock
+5,Fast Phone Charger,Chargers,800,https://placehold.co/500x400?text=Charger,In stock
+6,Wireless Headphones,Headphones,1800,https://placehold.co/500x400?text=Headphones,In stock
+7,Computer Keyboard,Computer Accessories,1500,https://placehold.co/500x400?text=Keyboard,In stock
+8,Wireless Computer Mouse,Computer Accessories,650,https://placehold.co/500x400?text=Mouse,In stock
+9,Classic Sunglasses,Eyewear,700,https://placehold.co/500x400?text=Sunglasses,In stock
+10,Eyewear Chain,Eyewear,300,https://placehold.co/500x400?text=Eyewear+Chain,In stock
+11,Classic Belt,Belts & Chains,650,https://placehold.co/500x400?text=Belt,In stock
+12,Classic Clogs,Clogs,1200,https://placehold.co/500x400?text=Clogs,In stock
