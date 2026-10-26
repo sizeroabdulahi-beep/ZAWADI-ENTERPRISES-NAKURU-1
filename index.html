@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f68b1e">
+  <meta name="description" content="Shop phones and accessories at ZAWADI Kenya.">
+  <title>ZAWADI Kenya | Shop Smart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-strip">
+    Welcome to ZAWADI Kenya — Great gadgets, great value!
+  </div>
+
+  <header class="site-header">
+    <a href="#" class="brand">
+      <span class="brand-icon">Z</span>
+      <span>ZAWADI<small>SHOP SMART. LIVE BETTER.</small></span>
+    </a>
+
+    <form id="searchForm" class="search-box">
+      <input id="searchInput" type="search"
+        placeholder="Search phones, watches, chargers..."
+        aria-label="Search products">
+      <button type="submit">Search</button>
+    </form>
+
+    <nav class="header-actions">
+      <a href="#account">My Account</a>
+      <a href="#products">Shop</a>
+      <button id="cartButton" type="button">
+        🛒 Cart <span id="cartCount">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <nav class="category-nav" aria-label="Product categories">
+    <a href="#products">All Products</a>
+    <a href="#products" data-category="Phones">Phones</a>
+    <a href="#products" data-category="Wristwatches">Watches</a>
+    <a href="#products" data-category="Earpods">Earpods</a>
+    <a href="#products" data-category="Chargers">Chargers</a>
+    <a href="#products" data-category="Headphones">Headphones</a>
+    <a href="#products" data-category="Cables">USB Cables</a>
+    <a href="#products" data-category="Computer Accessories">Keyboards & Mice</a>
+    <a href="#products" data-category="Eyewear">Eyewear</a>
+    <a href="#products" data-category="Fashion Accessories">Belts & Chains</a>
+    <a href="#products" data-category="Clogs">Classic Clogs</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">YOUR ONLINE GADGET STORE</span>
+        <h1>Upgrade Your Everyday.</h1>
+        <p>Discover gadgets and accessories at prices you'll love.</p>
+        <a class="primary-button" href="#products">Shop Products →</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <span class="hero-z">Z</span>
+        <span class="hero-caption">ZAWADI</span>
+        <span>GADGETS • ACCESSORIES • VALUE</span>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div>🚚 <span><strong>Easy Ordering</strong><small>Order through WhatsApp</small></span></div>
+      <div>💰 <span><strong>KSh Pricing</strong><small>Prices in Kenyan shillings</small></span></div>
+      <div>🎧 <span><strong>Gadgets & More</strong><small>Everyday essentials</small></span></div>
+    </section>
+
+    <section class="deal-banner">
+      <div>
+        <span class="eyebrow">ZAWADI SPECIAL OFFERS</span>
+        <h2>Find your next favourite.</h2>
+        <p>Explore products and available deals.</p>
+      </div>
+      <a class="primary-button" href="#products">Explore Deals →</a>
+    </section>
+
+    <section id="products" class="products-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE ZAWADI COLLECTION</span>
+          <h2>Shop Our Products</h2>
+        </div>
+        <select id="sortSelect" aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+        </select>
+      </div>
+
+      <div id="categoryFilters" class="category-filters"></div>
+      <p id="productStatus" class="product-status">Loading products...</p>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <section id="account" class="account-promo">
+      <div>
+        <span class="eyebrow">YOUR ZAWADI ACCOUNT</span>
+        <h2>Your shopping, all in one place.</h2>
+        <p>Customer registration and Google sign-in will be connected in the next setup stage.</p>
+      </div>
+      <button id="accountInfoButton" class="secondary-button" type="button">
+        Account coming soon
+      </button>
+    </section>
+
+    <section id="cartPanel" class="cart-panel" hidden>
+      <div class="section-heading">
+        <h2>Your Cart</h2>
+        <button id="closeCartButton" class="secondary-button" type="button">Close</button>
+      </div>
+      <div id="cartItems"></div>
+      <p class="cart-total">Total: <strong id="cartTotal">KSh 0</strong></p>
+      <button id="checkoutButton" class="primary-button" type="button">
+        Order via WhatsApp
+      </button>
+      <p class="small-note">Check your order and total before sending your message.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#" class="brand footer-brand">
+      <span class="brand-icon">Z</span>
+      <span>ZAWADI<small>SHOP SMART. LIVE BETTER.</small></span>
+    </a>
+    <p>Gadgets, accessories and everyday essentials.</p>
+    <p>© <span id="currentYear"></span> ZAWADI Kenya</p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
